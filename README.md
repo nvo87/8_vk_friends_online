@@ -1,11 +1,12 @@
 # Watcher of Friends Online
 
-This script will request friends online list via vk python module.  
+This script will request and output friends online list via vk python module.  
 All you need is start script and type your login, password.  
 Getpass module makes your password chars hidden.
 
 # How to Install
 
+Script requires vk module. You may download it wit pip.  
 Python 3 should be already installed. Then use pip (or pip3 if there is a conflict with old Python 2 setup) to install dependencies:
 
 ```bash
