@@ -1,6 +1,8 @@
 # Watcher of Friends Online
 
 This script will request friends online list via vk python module.  
+All you need is start script and type your login, password.  
+Getpass module makes your password chars hidden.
 
 # How to Install
 
@@ -14,9 +16,19 @@ Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclop
 
 # How to run
 
-Just type `python vk_friends_online.py`  
+Just type
+```
+python vk_friends_online.py
+```
+  
 Then you have to input your login and password.
 
+As a result, you'll get your online friends list:
+```
+Alex Petrov
+Max Ivanov
+Sergey Kozlov
+```
 
 # Project Goals
 

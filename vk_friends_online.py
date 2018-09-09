@@ -12,19 +12,18 @@ def get_user_password():
     return getpass.getpass(prompt='Type your password: ')
 
 
-def get_online_friends(login, password):
+def get_online_friends(login, password, api_version='5.83'):
     session = vk.AuthSession(
         app_id=APP_ID,
         user_login=login,
         user_password=password,
         scope='friends'
     )
-    api = vk.API(session, lang='ru')
+    api = vk.API(session, lang='ru', v=api_version)
 
-    friends_id_list = api.friends.getOnline(v='5.83')
+    friends_id_list = api.friends.getOnline()
     return api.users.get(
-        user_ids=friends_id_list,
-        v='5.83'
+        user_ids=friends_id_list
     )
 
 
